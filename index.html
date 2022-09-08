@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="styling.css" />
+    <link
+      rel="icon"
+      type="Image/x-icon"
+      href="/Images/1213-snake-lineal-playonce.gif"
+    />
+  </head>
+  <body>
+    <div id="logo">
+      S
+      <img
+        src="Images/1213-snake-lineal-playonce.gif"
+        onmouseover="this.src='Images/1213-snake-lineal-playonce.gif';"
+        alt="Snake_Animation"
+      />
+      ake
+    </div>
+
+    <div id="options">
+      <img
+        id="Human"
+        src="Images/1461-joistick-alt-lineal-2.png"
+        onmouseover="this.src='Images/1461-joistick-alt-lineal.gif';"
+        onmouseout="this.src='Images/1461-joistick-alt-lineal-2.png';"
+        alt="Human"
+      />
+      <img
+        id="AI"
+        src="Images/478-computer-display-lineal-0.png"
+        onmouseover="this.src='Images/478-computer-display-lineal.gif';"
+        onmouseout="this.src='Images/478-computer-display-lineal-0.png';"
+        alt="AI"
+      />
+    </div>
+
+    <img
+      id="return"
+      src="Images/216-arrow-5-lineal-0.png"
+      onmouseover="this.src='Images/216-arrow-5-lineal.gif';"
+      onmouseout="this.src='Images/216-arrow-5-lineal-0.png';"
+      alt="return"
+    />
+
+    <canvas id="board"></canvas>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

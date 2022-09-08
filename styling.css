@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  /* background-color: azure; */
+  /* background-color: cornsilk; */
+  background-image: url("/Images/Ocean-2.5s-1740px.png");
+}
+
+#logo,
+#options {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  height: 10rem;
+
+  line-height: 10rem;
+  font-size: 10rem;
+  font-weight: 600;
+  color: #079c7e;
+}
+
+#logo img {
+  transform: rotate(90deg);
+  margin-right: -0.5rem;
+}
+
+#options {
+  margin-top: 5rem;
+  height: 10rem;
+}
+
+#options img,
+#return {
+  margin: 1rem;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+}
+
+#options img:hover,
+#return:hover {
+  background-color: black;
+}
+
+#return {
+  height: 6rem;
+  transform: rotate(180deg);
+  border-radius: 50%;
+}
+
+#board {
+  margin: auto;
+  margin-top: -3rem;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 0.5rem;
+  background-color: #064f50;
+}
