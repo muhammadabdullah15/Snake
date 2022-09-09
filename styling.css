@@ -62,3 +62,27 @@ body {
   border-radius: 0.5rem;
   background-color: #064f50;
 }
+
+#speed_container,
+#score_container {
+  position: absolute;
+  margin: 1rem;
+  top: 15rem;
+  right: 5rem;
+  display: flex;
+  height: 6rem;
+}
+
+#speed,
+#score_container,
+#score {
+  width: 10rem;
+  line-height: 6rem;
+  text-align: center;
+  color: #079c7e;
+  font-size: 2rem;
+}
+
+#score_container {
+  left: 7rem;
+}
