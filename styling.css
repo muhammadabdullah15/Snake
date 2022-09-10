@@ -10,6 +10,8 @@ body {
   /* background-color: azure; */
   /* background-color: cornsilk; */
   background-image: url("/Images/Ocean-2.5s-1740px.png");
+  /* height: 100vh;
+  width: 100vw; */
 }
 
 #logo,
@@ -85,4 +87,51 @@ body {
 
 #score_container {
   left: 7rem;
+}
+
+#gameover {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(black, black, black, 0.7); */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: black; */
+
+  justify-content: center;
+  align-items: center;
+}
+
+.gameover_container {
+  /* display: flex; */
+  text-align: center;
+  font-size: 4rem;
+  font-style: oblique;
+  color: #079c7e;
+  /* background-color: #103c3c; */
+  background-color: #063939;
+  border-radius: 2rem;
+  width: 30rem;
+  height: 13rem;
+}
+
+.gameover_options {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 8rem;
+}
+
+#returnhome {
+  transform: rotate(180deg);
+  /* border: 5px solid black; */
+  border-radius: 50%;
+}
+
+#retry {
+  border-radius: 50%;
 }

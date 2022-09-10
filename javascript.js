@@ -21,12 +21,20 @@ document.getElementById("Human").onclick = function () {
 document.getElementById("return").onclick = function () {
   end();
 };
+document.getElementById("returnhome").onclick = function () {
+  end();
+};
+document.getElementById("retry").onclick = function () {
+  end();
+  start();
+};
 
 document.onkeydown = checkKey;
 
 document.getElementById("return").style.display = "none";
 document.getElementById("speed_container").style.display = "none";
 document.getElementById("score_container").style.display = "none";
+document.getElementById("gameover").style.display = "none";
 
 board.style.display = "none";
 
@@ -36,6 +44,7 @@ function start(mode) {
   document.getElementById("return").style.display = "inline-block";
   document.getElementById("speed_container").style.display = "flex";
   document.getElementById("score_container").style.display = "flex";
+  document.getElementById("gameover").style.display = "none";
 
   document.getElementById("speed").innerText = "Normal";
   speed = 200;
@@ -241,8 +250,7 @@ function checkGameOver() {
     snake.head.y == -1 ||
     snake.head.y == 20
   ) {
-    alert("gameOver");
-    end();
+    document.getElementById("gameover").style.display = "flex";
   }
 
   for (let i = 0; i < snake.body.length; i++) {
@@ -268,5 +276,7 @@ function end() {
   board.style.display = "none";
   document.getElementById("speed_container").style.display = "none";
   document.getElementById("score_container").style.display = "none";
+  document.getElementById("gameover").style.display = "none";
+
   console.log("GAME END");
 }
