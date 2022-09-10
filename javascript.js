@@ -255,8 +255,7 @@ function checkGameOver() {
 
   for (let i = 0; i < snake.body.length; i++) {
     if (snake.head.x == snake.body[i][0] && snake.head.y == snake.body[i][1]) {
-      alert("gameOver");
-      end();
+      document.getElementById("gameover").style.display = "flex";
     }
   }
 }
